@@ -1,0 +1,13 @@
+[package]
+name = "dugrow"
+version = "0.1.0"
+edition = "2021"
+description = "Disk usage growth tracker — find which directories grew, not just which are big"
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+clap = { version = "4", features = ["derive"] }
+jwalk = "0.8"
+rusqlite = { version = "0.32", features = ["bundled"] }
